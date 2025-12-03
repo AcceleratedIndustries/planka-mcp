@@ -2,6 +2,22 @@
 
 A Model Context Protocol (MCP) server for [Planka](https://planka.app/) kanban boards, written in Rust.
 
+## Installation
+
+### From GitHub (recommended)
+
+```bash
+cargo install --git https://github.com/AcceleratedIndustries/planka-mcp
+```
+
+### From source
+
+```bash
+git clone https://github.com/AcceleratedIndustries/planka-mcp
+cd planka-mcp
+cargo build --release
+```
+
 ## Setup
 
 ### Environment Variables
@@ -17,15 +33,13 @@ export PLANKA_EMAIL="admin@example.com"
 export PLANKA_PASSWORD="your-password"
 ```
 
-### Build
-
-```bash
-cargo build --release
-```
-
 ### Run
 
 ```bash
+# If installed via cargo install:
+planka-mcp
+
+# If built from source:
 ./target/release/planka-mcp
 ```
 
